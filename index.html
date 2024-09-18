@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria en CDMX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <nav class="bg-gray-800 sticky top-0 z-50">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                Icon when menu is closed.
+    
+                Menu open: "hidden", Menu closed: "block"
+              -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!--
+                Icon when menu is open.
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                                aria-current="page">Dashboard</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                    aria-current="page">Dashboard</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="relative bg-slate-300 h-screen text-white overflow-hidden ">
+        <div class="absolute inset-0">
+            <img src="./img/departamento-en-renta.jpg" alt="Background Image"
+                class="object-cover object-center w-full h-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+            <img src="./img/logo-cirular-inmobiliaria-villanueva-garcia.png" alt="" class="w-32 h-32 mb-8 " />
+            <h1 class="text-5xl font-bold leading-tight mb-4">Bienvenido a Inmobiliaria Villanueva García</h1>
+            <p class="text-lg text-gray-300 mb-8">Inmuebles en Renta y Venta en CDMX.</p>
+            <a href="#inmuebles"
+                class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Iniciar
+                la aventura</a>
+        </div>
+    </div>
+
+    <div class="bg-white py-20 sm:py-10" id="inmuebles">
+
+        <div class="bg-white pt-15 sm:py-32 border-b border-gray-200">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <dl class="grid grid-cols-1 gap-x-4 gap-y-8 text-center lg:grid-cols-3 pb-5 md:pb-0">
+
+                    <a href="#nosotros" class="flex h-full items-stretch">
+                        <div
+                            class="mx-auto flex flex-col items-center justify-center border border-gray-400 px-4 py-3 rounded-lg hover:border-gray-600 hover:border-opacity-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+                            <div class="px-2 mx-auto align-middle self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                    fill="none" stroke="#a5c71b" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                    <path
+                                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                </svg>
+                            </div>
+                            <div class="flex-grow text-center">
+                                <h1 class="text-gray-900 font-bold">Conoce Inmobiliaria Villanueva García</h1>
+                                <p class="text-sm mt-2">¿Quiénes somos?</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="flex h-full items-stretch">
+                        <div
+                            class="mx-auto flex flex-col items-center justify-center border border-gray-400 px-4 py-3 rounded-lg hover:border-gray-600 hover:border-opacity-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+                            <div class="px-2 mx-auto align-middle self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                    fill="none" stroke="#a5c71b" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                    <path
+                                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                </svg>
+                            </div>
+                            <div class="flex-grow text-center">
+                                <h1 class="text-gray-900 font-bold">Ver todos los Inmuebles</h1>
+                                <p class="text-sm mt-2">Explora nuestras propiedades</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="flex h-full items-stretch">
+                        <div
+                            class="mx-auto flex flex-col items-center justify-center border border-gray-400 px-4 py-3 rounded-lg hover:border-gray-600 hover:border-opacity-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+                            <div class="px-2 mx-auto align-middle self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#a5c71b" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-article">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                                    <path d="M7 8h10" />
+                                    <path d="M7 12h10" />
+                                    <path d="M7 16h10" />
+                                </svg>
+                            </div>
+                            <div class="flex-grow text-center">
+                                <h1 class="text-gray-900 font-bold">Nuestro Blog</h1>
+                                <p class="text-sm mt-2">¿Quieres leer algo interesante?</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </dl>
+            </div>
+        </div>
+
+
+        <div class="mx-auto max-w-7xl px-5 lg:px-8 mt-4">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Nuevos Inmuebles
+                </h2>
+                <p class="mt-2 text-lg leading-8 text-gray-600 text-center">Aquí encontrarás los ultimos inmuebles
+                    listados</p>
+
+            </div>
+            <div
+                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+
+                <article class="flex max-w-xl flex-col items-start justify-between border border-gray-200 rounded-lg">
+                    <img src="./img/departamento-en-renta.jpg" alt="" class="border rounded-lg" />
+                    <div class="group relative p-3">
+                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Fragonard - Renta $25,000
+                            </a>
+                        </h3>
+                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error
+                            voluptates
+                            culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+                            exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                    </div>
+                    <div class="relative mt-8 flex items-center gap-x-4 p-3">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Ver
+                            Propiedad</button>
+                    </div>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between border border-gray-200 rounded-lg">
+                    <img src="./img/departamento-en-renta.jpg" alt="" class="border rounded-lg" />
+                    <div class="group relative p-3">
+                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Fragonard - Renta $25,000
+                            </a>
+                        </h3>
+                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error
+                            voluptates
+                            culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+                            exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                    </div>
+                    <div class="relative mt-8 flex items-center gap-x-4 p-3">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Ver
+                            Propiedad</button>
+                    </div>
+                </article>
+                <article class="flex max-w-xl flex-col items-start justify-between border border-gray-200 rounded-lg">
+                    <img src="./img/departamento-en-renta.jpg" alt="" class="border rounded-lg" />
+                    <div class="group relative p-3">
+                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Fragonard - Renta $25,000
+                            </a>
+                        </h3>
+                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error
+                            voluptates
+                            culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed
+                            exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                    </div>
+                    <div class="relative mt-8 flex items-center gap-x-4 p-3">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Ver
+                            Propiedad</button>
+                    </div>
+                </article>
+
+
+
+
+
+
+
+                <!-- More posts... -->
+            </div>
+        </div>
+
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <p
+                    class="text-center border-b border-gray-200 mb-12 text-3xl font-semibold tracking-tight text-gray-900">
+                    Un breve resumen de nuestra empresa</p>
+                <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-600">Transacciones realizadas</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">+800
+                        </dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-600">Años de experiencia</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">12
+                        </dd>
+                    </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-600">Y respaldo en cada una de tus operaciones</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            Seguridad
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="relative bg-slate-300 h-screen text-white overflow-hidden " id="nosotros">
+        <div class="absolute inset-0">
+            <img src="./img/venta-hda-san-martin.jpg" alt="Background Image"
+                class="object-cover object-center w-full h-full" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+
+            <h1 class="text-5xl font-bold leading-tight mb-4">Acerca de nosotros</h1>
+
+            <div class="rounded-xl p-4 shadow-lg w-3/4 md:w-1/2 bg-sky-950/60">
+                <p class="text-white mb-8 text-2xl ">Somos la mejor inmobiliaria
+                    en CDMX. Con 12 años de experiencia en el sector, nos dedicamos a ofrecer soluciones
+                    personalizadas y efectivas para cada uno de nuestros clientes.</p>
+                <br>
+                <p class="text-white mb-8 text-2xl ">
+                    Nuestro compromiso con la excelencia
+                    nos ha permitido alcanzar una calificación de 4.8 estrellas en Google, reflejo de la satisfacción y
+                    confianza de nuestros clientes.</p>
+            </div>
+
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-center">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 Grupo 210512
+            </span>-
+            <span class="text-sm text-gray-500 sm:text-center text-yellow-400">
+                Desarrollado por <a href="https://alfgow.villanuevagarcia.com/" target="_blank">@alfgow</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+<script src="./js/app.js"></script>
+
+</html>
